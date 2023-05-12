@@ -1,5 +1,5 @@
-class Cmemes {
-  Cmemes({
+class ComputerMemeModel {
+  ComputerMemeModel({
     this.id,
     this.created,
     this.modified,
@@ -17,8 +17,8 @@ class Cmemes {
   final int? upvotes;
   final int? downvotes;
 
-  factory Cmemes.fromJson(Map<String, dynamic> json) {
-    return Cmemes(
+  factory ComputerMemeModel.fromJson(Map<String, dynamic> json) {
+    return ComputerMemeModel(
       id: json["id"],
       created: DateTime.tryParse(json["created"] ?? ""),
       modified: DateTime.tryParse(json["modified"] ?? ""),
